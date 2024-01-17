@@ -6,9 +6,55 @@
     <title>Aprendendo CSS</title>
 </head>
 <body>
-    <h1>CSS Inline</h1>
+    <h1>Tipos de CSS</h1>
+
+    <h2>CSS Inline</h2>
     <p>style="" dentro de uma tag Html determina que este atributo só irá funcionar na tag selecionada</p>
-    <h1>CSS Intrno ou Incorporado</h1>
-    <p>Declaração de CSS irá funcionar para todas as tags especificada</p>
+
+    <h2>CSS Interno ou Incorporado</h2>
+    <p>Declaração de CSS irá funcionar para todas as tags especificadas</p>
+    <p>Instruções de CSS são dadas dentro da página em que se deseja configurar. Utiliza-se a tag &#60style> &#60/style> antes da tag &#60/head></p>
+
+    <h2>CSS Externo</h2>
+    <p>Será aplicado em todas as páginas que possuírem o seu link de referência</p>
+
+    <h1>Hierarquia de CSS</h1>
+    <p>Inline > Interno > Externo</p>
+
+    <h1>Seletores e classes</h1>
+
+    <h2>Seletor</h2>
+    <p>Indica qual elemento HTML que será trabalhado</p>
+    <p>body{<br>}
+        <ul>
+            <li>background:</li>
+        </ul>
+    </p>
+    <p>p{<br>}
+        <ul>
+            <li>color:</li>
+        </ul>
+    </p>
+
+    <h2>Classes</h2>
+    <p>Atributos especificados por um título. Toda tag que que tiver este título herdará a configuração. Nunca iniciar o nome das classes com números.</p>
+    <p>Deve-se inserir no documento CSS o título/nome da classe depois de um ponto; no documento Html este títlo deve ser inserido na tag que herdará as configurações.</p>
+    <p>Exemplo: <br>class="center" (na tag do documento Html) <br>.center{ <br>} (no documento CSS)</p>
+
+    <h2>ID</h2>
+    <p>A tag terá um nome único. Modificações serão feitas apenas na tag que contenha o id. No documento CSS digita-se # e o título escolhido; no documento CSS insere-se na tag específica id="" (dentro das aspas insere-se o título). Nunca iniciar o nome do id com números. Não pode existir mais de um id com o mesmo título.</p>
+
+    <h2>Coringa*</h2>
+    <p>Todas as tags receberão as propriedades que forem especificadas dentro de: <br>*{<br>}</p>
+
+    <h2>Agrupamento de seletores</h2>
+    <p>Todas as tags que receberão as mesmas propriedaes podem ser agrupadas.</p>
+    <p>Exemplo: <br><strong>h1, p</strong>{<br>color:red;<br>text-align:center;<br>}</p>
+
+    <h1>Propriedades</h1>
+    <p>Color: é a Cor texto. <br>Padrões: Hexadecimais, RGB, HSL ou nome.</p>
+    <p>background: background-color:cor de fundo <br>background-image: url("../indica o caminho da imagem") imagem de fundo <br>background-size:cover (a imagem preenche todo o espaço)</p>
+    
+
 </body>
 </html>
